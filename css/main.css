@@ -1,0 +1,418 @@
+
+/*//section1样式*/
+.section1{
+	position: relative;
+	width: 100%;
+}
+.section1 .right-top{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.section1 .left-bird{
+	transition: all 1s;
+}
+
+.section1 .left-bird:hover{
+	transform: translateX(10px);
+}
+.section1 .center{
+	position: absolute;
+	width: 300px;
+	height: 300px;
+	border: 15px solid black;
+	top: 200px;
+	left: 50%;
+	margin-left: -150px;
+	border-image: url("../img/kuang.png") 15 repeat;
+	text-align: center;
+	z-index: 2;
+}
+.section1 .right-mainword{
+	position: absolute;
+	top: 320px;
+	right: -450px;
+	width: 400px;
+	height:300px;
+}
+.section1 .right-mainword img:first-child{
+	position: absolute;
+	top: -100px;
+	left: -80px;
+}
+.section1 .right-mainword a{
+	position: absolute;
+	top: 0;
+}
+.section1 .right-mainword a:nth-child(2){
+	left: 80px;
+}
+.section1 .right-mainword a:nth-child(3){
+	left: 160px;
+}
+.section1 .right-mainword a:nth-child(4){
+	left: 240px;
+}
+.section1 .right-mainword a:nth-child(5){
+	left: 320px;
+}
+.section1 .right-mainword i.fa{
+	position: absolute;
+	top: -20px;
+	left: 20px;
+	color: red;
+}
+
+/*section2样式*/
+.section2{
+	padding-top: 100px;
+	padding-left: 180px;
+	position: relative;
+}
+.section2 .spring{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.section2 .meihua{
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+.section2 .box {
+    width:85%;
+    height:450px;
+    background:#FFF;
+}
+
+.section2 .effect{
+    position:relative;       
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.section2 .effect::before, .section2 .effect::after{
+    content:"";
+	position:absolute; 
+	z-index:-1;
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+	box-shadow:0 0 20px rgba(0,0,0,0.8);
+	top:50%;
+	bottom:0;
+	left:10px;
+	right:10px;
+	-moz-border-radius:100px / 10px;
+	border-radius:100px / 10px;
+}
+
+.section2 .word{
+	width: 400px;
+	margin-left: 100px;
+	padding-top: 70px;
+	font-size: 24px;
+	position: relative;
+}
+.section2 .word .title{
+	position: absolute;
+	top: 10px;
+	left: -40px;
+}
+.section2 .word-body{
+	position: absolute;
+	top: 90px;
+	left: 15px;
+}
+.section2 .word-body p{
+	color: #674A4A;
+	text-shadow: -2px -2px 5px #aaa;
+} 
+.section2 .word-body span{
+	display: inline-block;
+	font-size: 22px;
+	color: #333;
+	text-shadow: 3px 3px 5px #aaa;
+}
+.section2  .word-body p i{
+	margin-right: 15px;
+}
+.section2 .personal-photo{
+	position: absolute;top: 40px;
+	right:100px;
+}
+
+/*//section3样式*/
+
+.section3{
+	position: relative;
+}
+.section3 .summer{
+	position: absolute;
+}
+
+@keyframes boatmove{
+	0%{
+		transform: scale(1);
+	}
+	40%{
+		transform: scale(0.5);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+.section3 .boat{
+	position: absolute;
+	top: 80px;
+	left: 320px;
+	animation: boatmove 15s infinite linear;
+}
+.section3 .img1{
+	position: absolute;
+	top: 200px;
+	left: 600px;
+	transition: all 2s;
+}
+.section3 .img2{
+	position: absolute;
+	top: 190px;
+	left: 950px;
+	transition: all 2s;
+}
+
+.section3 .img1:hover{
+	transform: translateX(15px);
+}
+.section3 .img2:hover{
+	transform: translateX(-15px);
+}
+.section3 .img3:hover{
+	transform: translateX(15px);
+}
+.section3 .fish{
+	position: absolute;
+	top: 500px;
+	left: 600px;
+}
+.section3 .hehua{
+	position: absolute;
+	bottom: 30px;
+	left: 30px;
+}
+.section3 .mainword{
+	width: 560px;
+	position: absolute;
+	top: -50px;
+	right: 30px;
+	text-align: left;
+	padding-right: 30px;
+	padding-top: 50px;
+}
+.section3 .mainword p{
+	height: 40px;
+	width: 100%;
+	color: #333;
+	font-size: 25px;
+	font-family: "楷体";
+	text-shadow: 3px 3px 5px #ccc;
+}
+
+
+/*//section4样式*/
+
+.section4{
+	position: relative;
+}
+.section4 .left-mainword{
+	position: absolute;
+	height: 420px;
+	width: 420px;
+	border: 40px solid black;
+	left: 100px;
+	top: 80px;
+	border-image: url("../img/kuang.png") 30 repeat;
+}
+
+.section4 .left-mainword p{
+	height: 60px;
+	width: 100%;
+	color: #333;
+	font-size: 24px;
+	font-family: "楷体";
+	text-shadow: 3px 3px 5px #ccc;
+}
+
+.section4 .fall{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.section4 .fengshu{
+	position: absolute;
+	bottom: 0;
+	left: -50px;
+	width:100%;
+}
+
+
+.section5{
+	position: relative;
+}
+
+.section5 .winter{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.section5 .mountain{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+
+.section5 .mountain img{
+	width: 100%;
+}
+
+.section5 .title{
+	position: absolute;
+	left: 50px;
+	top: 20px;
+}
+
+.section5 .myOpus{
+	position: absolute;
+	width: 100%;
+	top: 150px;
+	height: 400px;
+}
+
+.section5 .myOpus .opus{
+	display: inline-block;
+	height: 75%;
+	width: 16%;
+	margin: 1% 1% 9%;
+	border: red solid 5px;
+	overflow: hidden;
+	border-image: url("../img/kuang.png") 5 repeat;
+	position: relative;
+}
+
+.opus img{
+	position: absolute;
+}
+.img1{
+	transition:  all 1s;
+}
+.opus .mask{
+	position: absolute;
+	width: 100%;
+	height: 150px;
+	background: rgba(0,0,0,0.7);
+	bottom: -150px;
+	transition: all 1s;
+}
+
+.opus:hover .img2{
+	opacity: 0;
+}
+.opus:hover .img1{
+	transform: scale(1.05);
+}
+.opus:hover .mask{
+	transform: translateY(-150px);
+}
+
+.mask p{
+	color: #ccc;
+	font-size: 18px;
+	text-align: center;
+	vertical-align: center;
+}
+
+/*//section6样式*/
+
+.section6{
+	position: relative;
+}
+.section6 .title{
+	position: absolute;
+	top: 50px;
+	right: 500px;
+}
+.section6 .contactend{
+	position: absolute;
+	bottom: -200px;
+	left: 0;
+}
+
+.section6 .contactme{
+	position: absolute;
+	height: 180px;
+	width: 800px;
+	top: 150px;
+	right: 10px;
+	border-top: 10px solid black;
+	border-bottom: 10px solid black;
+	border-image: url("../img/kuang.png") 10 repeat;
+}
+
+.section6 .contactme a{
+	width: 96px;
+	height: 96px;
+	margin:40px 28px;
+	overflow: hidden;
+	display: inline-block;
+}
+.contactSpite1{
+	background: url("../img/contactSpite.png") no-repeat -7px -10px;
+
+}
+.contactSpite2{
+	background: url("../img/contactSpite.png") no-repeat -125px -10px;
+}
+.contactSpite3{
+	background: url("../img/contactSpite.png") no-repeat -251px -10px;
+}
+.contactSpite4{
+	background: url("../img/contactSpite.png") no-repeat -367px -10px;
+}
+.contactSpite5{
+	background: url("../img/contactSpite.png") no-repeat -479px -10px;
+}
+.myalert{
+	width: 300px;
+	height: 180px;
+	position: absolute;
+	border: 10px solid #999;
+	top: -10px;
+	left: 0;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px #ccc;
+	display: none;
+	z-index: 5;
+	border-image: url("../img/kuang.png") 10 repeat;
+}
+.myalert p{
+	color: #222;
+	font-size: 22px;
+	text-align: center;
+	vertical-align: center;
+	line-height: 140px;
+	font-weight: bold;
+}
+.mask2{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: black;
+	opacity: 0.4;
+	z-index: 3;
+	display: none;
+}

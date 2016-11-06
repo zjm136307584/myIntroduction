@@ -1,0 +1,296 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+#title{
+	height: 100px;
+	width: 1150px;
+	background: white;
+	margin: 0 auto;
+}
+.left{
+	float: left;	
+	margin-top: 27px;
+}
+#title ul{
+	list-style: none;
+	display: inline-block;
+}
+.mid,.mid li{
+	float: left;
+	margin: 0 25px;
+}
+.mid li a{
+	text-decoration: none;
+	color: black;
+	line-height: 100px;
+	font-size: 16px;
+}
+#title .mid .point a{
+	color: #c9242b;
+}
+.right,.right li{
+	float: right;	
+}
+.right li a{
+	text-decoration:none;
+	color: black;
+	line-height: 100px;
+	font-size: 15px;
+	padding: 0 15px;
+}
+.right li:last-child a{
+	border-right: 1px solid black;
+}
+#title a:hover{
+	color: #c9242b;
+}
+#main{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+}
+#photo{
+	width: 100%;
+	position: relative;
+}
+#photo ul{
+	list-style: none;
+}
+#photo li{
+	position: absolute;
+	display: none;
+}
+#photo ul li:first-child{
+	display: inline-block;
+}
+#buttom{
+	width: 20px;
+	height: 100px;
+	position: absolute;
+	top:280px;
+	right: 100px;
+}
+#buttom ul{
+	list-style: none;
+}
+#buttom ul li{
+	margin: 20px;
+	width: 10px;
+	height:10px;
+	border-radius: 7px;
+	border:2px solid white;
+}
+.target{
+	background: white;
+}
+#aside{
+	position: absolute;
+	top: 0;
+	left: 80px;
+}
+#aside .asideAll{
+	background: white;
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+	margin:20px 0;
+	box-shadow: 1px 1px 2px #eee;
+	position: relative;
+}
+.asideAll>a{
+	display: inline-block;
+	text-decoration: none;
+	color: #999;
+	font-size: 18px;
+	margin-top: 35px;
+	margin-left: 30px;
+}
+.asideAll a p{
+	color: black;
+	font-size: 25px;
+	font-weight: 700;
+}
+.wrap{
+	width: 650px;
+	height: 475px;
+	position: absolute;
+	top: 30px;
+	left: 110px;
+	display: none;
+}
+.aside_1:hover .wrap{
+	display: block;
+}
+.aside_2:hover .wrap{
+	display: block;
+}
+.aside_3:hover .wrap{
+	display: block;
+}
+.aside_4:hover .wrap{
+	display: block;
+}
+.image{
+	width: 540px;
+	height: 90px;
+	position: absolute;
+	left: 60px;
+	top: 0;
+	margin-bottom: 5px;
+}
+.image ul{
+	list-style: none;
+}
+.image ul li{
+	float: left;
+	margin-right: 5px;
+}
+.contentAll{
+	background: white;
+	position: absolute;
+	left: 60px;
+	top: 95px;
+	opacity: 0.8;
+}
+.content1{
+	width: 535px;
+	height:  380px;	
+}
+.contentAll ul{
+	list-style: none;
+	float: left;
+	width: 147px;
+	padding: 0 15px;
+	margin: 10px 0;
+	border-right: 1px solid #ccc;
+}
+.contentAll ul:last-child{
+	border: none;
+}
+.contentAll ul li{
+	padding: 7px 0;
+}
+.contentAll ul li a{
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+.wrap_foot{
+	position: absolute;
+	top: 345px;
+	left: 360px;
+	height: 20px;
+}
+.wrap_foot a{
+	text-decoration: none;
+	color: #666;
+	font-size: 12px;
+	padding-right: 25px;
+	display: inline-block;
+}
+.contentAll ul li a:hover{
+	color: #f04e37;
+}
+.contentAll ul .red{
+	background: url(../image/h.png) no-repeat right center;
+}
+.contentAll ul .blue{
+	background: url(../image/b.png) no-repeat right center;
+}
+.contentAll ul .red a{
+	color: #f04e37;
+}
+.direction{
+	position: absolute;
+	top: 30px;
+	left: 35px;
+	border-left: 10px solid red;
+	border-righ : 10px solid transparent;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+.content2{
+	height: 380px;
+}
+.content2 .wrap_foot{
+	top: 345px;
+	left: 180px;
+}
+.aside_2 .direction{
+	top: 155px;
+}
+.content3{
+	height: 380px;
+	width: 175px;
+}
+.content3 ul{
+	border: none;
+}
+.content3 .wrap_foot{
+	top: 345px;
+	left: 10px;
+}
+.aside_3 .direction{
+	top: 290px;
+}
+.content4{
+	height: 380px;
+	width: 175px;
+}
+.content4 ul{
+	border: none;
+}
+.content4 .wrap_foot{
+	top: 345px;
+	left: 10px;
+}
+.aside_4 .direction{
+	top: 420px;
+}
+.wrap_foot .red{
+	background: url(../image/h.png) no-repeat right center;
+}
+.wrap_foot .blue{
+	background: url(../image/b.png) no-repeat right center;
+}
+#aside img{
+	width: 175px;
+	height: 90px;
+	overflow: hidden;
+	transition: all 1s;
+}
+#aside img:hover{
+	transform: scale(1.1);
+}
+.aside_2 .wrap{
+	top: -100px;
+}
+.aside_3 .wrap{
+	top: -230px;
+}
+.aside_4 .wrap{
+	top: -360px;
+}
+#foot{
+	height: 80px;
+	width: 100%;
+	background: black;
+	opacity: 0.3;
+	position: fixed;
+	bottom: 0;
+}
+#foot .center{
+	width: 1000px;
+	margin: 0 auto;
+}
+#foot .center a{
+	text-decoration: none;
+	font-size: 11px;
+	color: white;
+	font-weight: bold;
+}
+#foot .center .color{
+	color: orange;
+}
